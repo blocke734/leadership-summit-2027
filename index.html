@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
 <meta name="description" content="Frequently asked questions for ACU's Leadership Summit 2027 at Crooked Creek Young Life Camp.">
 <title>Leadership Summit 2027 FAQ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,7 @@
 [hidden] { display: none !important; }
 body { margin: 0; }
 img { max-width: 100%; }
-/* Layout: bright daytime sky hero with layered snowy peaks → sticker-style arrival card → sticky search bar → index + color-coded topic groups */
+/* Single light theme on every device. Layout: bright daytime sky hero with layered snowy peaks → sticker-style arrival card → sticky search bar → index + color-coded topic groups */
 :root {
   --bg: #F5FAFF;
   --surface: #FFFFFF;
@@ -45,33 +46,9 @@ img { max-width: 100%; }
   --shadow: 0 2px 4px rgba(30,80,140,.05), 0 10px 26px rgba(30,80,140,.08);
   --f-display: "Fredoka", "Nunito", "Trebuchet MS", system-ui, sans-serif;
   --f-body: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0C1726; --surface: #13233A; --ink: #E8F0FA; --muted: #9DB0C8; --line: #24395A;
-    --accent: #6DBBFA; --accent-ink: #06121F; --accent-soft: #173556;
-    --sun: #FFD45C; --sun-ink: #3D2C00;
-    --sky-top: #0B1C36; --sky-bottom: #1D3E68;
-    --peak-far: #24486F; --peak-mid: #2E5E91; --peak-near: #3B78B6; --snow: #DCEBFA;
-    --c-travel: #5DB2F5; --c-cost: #F5C054; --c-camp: #5BCB8D; --c-packing: #FF8A78; --c-course: #AE90F5; --c-contact: #4DCCC6;
-    --warn-bg: #3A2B0C; --warn-fg: #F6CB72; --stop-bg: #3D1A16; --stop-fg: #FFAFA3;
-    --mark: #6E5612; --mark-fg: #FFF6D8;
-    --shadow: 0 2px 4px rgba(0,0,0,.25), 0 10px 26px rgba(0,0,0,.25);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0C1726; --surface: #13233A; --ink: #E8F0FA; --muted: #9DB0C8; --line: #24395A;
-  --accent: #6DBBFA; --accent-ink: #06121F; --accent-soft: #173556;
-  --sun: #FFD45C; --sun-ink: #3D2C00;
-  --sky-top: #0B1C36; --sky-bottom: #1D3E68;
-  --peak-far: #24486F; --peak-mid: #2E5E91; --peak-near: #3B78B6; --snow: #DCEBFA;
-  --c-travel: #5DB2F5; --c-cost: #F5C054; --c-camp: #5BCB8D; --c-packing: #FF8A78; --c-course: #AE90F5; --c-contact: #4DCCC6;
-  --warn-bg: #3A2B0C; --warn-fg: #F6CB72; --stop-bg: #3D1A16; --stop-fg: #FFAFA3;
-  --mark: #6E5612; --mark-fg: #FFF6D8;
-  --shadow: 0 2px 4px rgba(0,0,0,.25), 0 10px 26px rgba(0,0,0,.25);
-  color-scheme: dark;
-}
+
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
