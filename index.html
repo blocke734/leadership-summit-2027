@@ -707,7 +707,7 @@ if (h && document.getElementById(h) && document.getElementById(h).tagName === "D
   const now = Date.now();
   if (now < start) {
     const days = Math.ceil((start - now) / 86400000);
-    el.innerHTML = `<strong>${days}</strong> ${days === 1 ? "day" : "days"} until Summit!`;
+    el.innerHTML = `<strong>${days}</strong> ${days === 1 ? "day" : "days"} till Summit!`;
   } else if (now < end) {
     el.innerHTML = `<strong>Summit is underway</strong>`;
   } else {
